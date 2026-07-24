@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-23",
+  "jurisdiction": "bo",
+  "focus": "Bolivian tax-benefit surface: RC-IVA and VAT under Ley 843, SIP pension contributions under Ley 065, Renta Dignidad, and the Juancito Pinto and Juana Azurduy CCTs.",
+  "purpose": "Household-level comparison-oracle and supporting-source references for Bolivia Axiom coverage. None of these are legal authority.",
+  "oracle_scope": "A RuleSpec oracle must be an executable, pinned external calculator that accepts household-level inputs and returns household-level tax-benefit outputs comparable to Axiom outputs. Aggregate simulators, distributional reports, parameter documentation, and public model summaries are supporting references only, not oracles.",
+  "oracles": [
+    {
+      "id": "bolmod",
+      "name": "BOLMOD",
+      "url": "https://www.wider.unu.edu/project/southmod-simulating-tax-and-benefit-policies-development",
+      "local_path": "~/.axiom/oracles/southmod/bundle/ (licensed, non-redistributable; never committed)",
+      "commit": null,
+      "model": "BOLMOD v2.1 (SOUTHMOD; EUROMOD platform)",
+      "dataset": "Encuesta de Hogares (EH) based input microdata (shipped with the licensed bundle where included)",
+      "role": "Household-level tax-benefit comparison oracle for Bolivia. Policy years 2019-23. Report CR-BOLMOD-v2-1 (UNU-WIDER).",
+      "coverage": [
+        "rc_iva",
+        "vat",
+        "transactions_tax",
+        "sip_pension_contributions",
+        "national_solidarity_contribution",
+        "renta_dignidad",
+        "bono_juancito_pinto",
+        "bono_juana_azurduy",
+        "household_disposable_income"
+      ],
+      "authority": "wiring_pending",
+      "availability_check": {
+        "checked_at": "2026-07-23",
+        "status": "wiring_pending",
+        "detail": "The locally held licensed SOUTHMOD bundle (EUROMOD runtime proven on the Ghana and Rwanda lanes) must be inventoried for BOLMOD BO systems before wiring. Validation frame: BOLMOD v2.1, policy years 2019-23."
+      },
+      "bundle_sha256": null
+    }
+  ]
+}
