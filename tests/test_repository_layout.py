@@ -127,7 +127,7 @@ def test_toolchain_pins_are_full_shas() -> None:
         "validation_waiver_set_sha256",
     }
     assert re.fullmatch(
-        r"[a-z]{2}-rulespec-\d{4}-\d{2}-\d{2}", toolchain["axiom_corpus_release"]
+        r"[a-z]{2}-rulespec-\d{4}-\d{2}-\d{2}(?:-r\d+)?", toolchain["axiom_corpus_release"]
     ), "release must be an immutable dated name"
     sha256_re = re.compile(r"^[0-9a-f]{64}$")
     assert sha256_re.match(toolchain["axiom_corpus_release_content_sha256"])
