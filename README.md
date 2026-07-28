@@ -23,3 +23,11 @@ Policy must come from the furthest upstream available source: Gaceta Oficial tex
 ## Parity program
 
 Tracked on issue #1: tranche-2 captures (post-2004 Ley 843 amendment instruments; DS 21531 RC-IVA reglamento and companion reglamentos; COVID-19 DS bonos 3546/4197/4200/4215/4345; program reglamentos operativos) and BOLMOD parity tests per instrument.
+
+## Listing gates
+
+This repo carries `app_visibility = "experimental"` in `.axiom/registry.toml` and stays out of app surfaces until:
+
+1. The encoded surface covers the flagship calculation (the RC-IVA gross-to-net calculation for a formal employee) end to end with companion tests.
+2. Oracle parity suites exist and pass against BOLMOD for the encoded surface.
+3. Citation paths are stable (ley/decreto-number form against the Gaceta Oficial prints).
