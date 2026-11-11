@@ -8,11 +8,11 @@ on:
 
 jobs:
   validate:
-    uses: TheAxiomFoundation/.github/.github/workflows/validate-rulespec.yml@ac3fe2105d17168e3df7f0a29f2623c65cbd5a4f # pinned; named corpus release validation
+    uses: TheAxiomFoundation/.github/.github/workflows/validate-rulespec.yml@cc135a6b4dacb0070c4eec1fb939f4803839428c # pinned; named corpus release validation
     secrets: inherit
     with:
       # axiom-encode ffa8f3f1 (encoder 0.2.2277) with the shared workflow at
-      # ac3fe210, the pair rulespec-il pins. Both postdate axiom-encode#1853
+      # cc135a6b (ac3fe210 plus .github#156). Both postdate axiom-encode#1853
       # (fa0da5e8). At this encoder the generated guard also checks a pull
       # request that changes only files under .axiom/encoding-manifests/.
       axiom-encode-ref: ffa8f3f1d7fef9e26a3d4d2ab0ebe78a40b546cb
